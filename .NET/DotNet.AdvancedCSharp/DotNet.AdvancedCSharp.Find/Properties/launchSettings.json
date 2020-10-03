@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DotNet.AdvancedCSharp.Find": {
+      "commandName": "Project",
+      "commandLineArgs": "files --path \"C:\\Users\\Vasil\\source\\repos\\gh!examples\\.NET\\DotNet.AdvancedCSharp\\DotNet.AdvancedCSharp.Find\""
+    }
+  }
+}
