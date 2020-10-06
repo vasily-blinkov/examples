@@ -1,1 +1,5 @@
 .vs/
+/.NET/DotNet.ExceptionHandling/DotNet.DropCap/obj
+/.NET/DotNet.ExceptionHandling/DotNet.DropCap/bin/Debug/netcoreapp3.1
+/.NET/DotNet.ExceptionHandling/DotNet.DropCap.Core/bin/Debug/netstandard2.0
+/.NET/DotNet.ExceptionHandling/DotNet.DropCap.Core/obj
