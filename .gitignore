@@ -3,3 +3,9 @@
 /.NET/DotNet.ExceptionHandling/DotNet.DropCap/bin/Debug/netcoreapp3.1
 /.NET/DotNet.ExceptionHandling/DotNet.DropCap.Core/bin/Debug/netstandard2.0
 /.NET/DotNet.ExceptionHandling/DotNet.DropCap.Core/obj
+/.NET/DotNet.Parse/DotNet.Parse.Abstractions/bin/Debug/netstandard2.0
+/.NET/DotNet.Parse/DotNet.Parse.Abstractions/obj
+/.NET/DotNet.Parse/DotNet.Parse.Long/bin/Debug/netstandard2.0
+/.NET/DotNet.Parse/DotNet.Parse.Long/obj
+/.NET/DotNet.Parse/DotNet.Parse.Long.Test/bin/Debug/netcoreapp3.1
+/.NET/DotNet.Parse/DotNet.Parse.Long.Test/obj
