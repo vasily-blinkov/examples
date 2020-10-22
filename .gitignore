@@ -9,3 +9,7 @@
 /.NET/DotNet.Parse/DotNet.Parse.Long/obj
 /.NET/DotNet.Parse/DotNet.Parse.Long.Test/bin/Debug/netcoreapp3.1
 /.NET/DotNet.Parse/DotNet.Parse.Long.Test/obj
+/.NET/DotNet.BCLExample/ServiceApp/bin/Debug/netcoreapp3.1
+/.NET/DotNet.BCLExample/ServiceApp/obj
+/.NET/DotNet.BCLExample/ServiceLib/bin/Debug/netstandard2.0
+/.NET/DotNet.BCLExample/ServiceLib/obj

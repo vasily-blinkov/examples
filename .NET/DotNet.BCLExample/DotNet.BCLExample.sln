@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceApp", "ServiceApp\ServiceApp.csproj", "{30763DE7-A06D-4846-88C5-7077A1B19CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLib", "ServiceLib\ServiceLib.csproj", "{3CF3C7DA-EEDF-4339-8CEB-E696BFD64E2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30763DE7-A06D-4846-88C5-7077A1B19CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30763DE7-A06D-4846-88C5-7077A1B19CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30763DE7-A06D-4846-88C5-7077A1B19CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30763DE7-A06D-4846-88C5-7077A1B19CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF3C7DA-EEDF-4339-8CEB-E696BFD64E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF3C7DA-EEDF-4339-8CEB-E696BFD64E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF3C7DA-EEDF-4339-8CEB-E696BFD64E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF3C7DA-EEDF-4339-8CEB-E696BFD64E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4024571-C08C-4D77-9D58-36EB76D7321E}
+	EndGlobalSection
+EndGlobal
