@@ -1,0 +1,22 @@
+body {
+  font-family: -apple-system, Sans-Serif;
+  color: #0c0905;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+a {
+  color: #7c5945;
+  text-decoration: none;
+}
