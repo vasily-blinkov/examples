@@ -41,6 +41,12 @@ This creates _.vscode\settings.json_ at the project root directory (the director
 
 # Usage
 
+## Build the application for deployment
+
+```PowerShell
+PS ...\src> npm run build
+```
+
 ## Starting the application
 
 ```PowerShell
