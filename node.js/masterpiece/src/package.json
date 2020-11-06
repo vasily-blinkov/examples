@@ -1,8 +1,8 @@
 {
-  "name": "brunch-app",
-  "description": "Brunch.io application",
+  "name": "swallow-the-dictionary",
+  "description": "An app for creating term-definitions dictionaries and learning them",
   "private": true,
-  "author": "Brunch",
+  "author": "Vasily_Blinkov@live.com",
   "version": "0.0.1",
   "repository": "",
   "scripts": {
