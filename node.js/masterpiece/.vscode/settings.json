@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0efe8e0b-fdce-4064-a660-008339591626/resourceGroups/SwallowTheDictionary-rg/providers/Microsoft.Web/sites/SwallowTheDictionary",
+    "appService.deploySubpath": "src\\public"
+}
