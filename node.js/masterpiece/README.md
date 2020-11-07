@@ -7,7 +7,7 @@
 1. _NPM_
 1. _Azure CLI_
 1. _Brunch_
-1. _HTML_
+1. _Jade_
 1. _CSS_
 
 # What I've Done
@@ -64,3 +64,12 @@ PS ...\src> npm run build
 ```PowerShell
 PS ...\src> npm start
 ```
+
+# Abstracts
+
+## Azure CLI
+
+### Web app
+
+1. Write a list of your web apps into a file: `az webapp list | out-file "tmp.json"` (PowerShell).
+1. Open a web app in a browser: `az webapp browse --name SwallowTheDictionary --resource-group SwallowTheDictionary-rg` (PowerShell).
