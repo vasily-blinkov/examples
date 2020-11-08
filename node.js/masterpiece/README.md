@@ -2,6 +2,7 @@
 
 1. _Windows_
 1. _PowerShell Core_
+1. _YAML_
 1. _Nodist_
 1. _Node.js_
 1. _NPM_
@@ -59,6 +60,10 @@ _2)_ You should run `npm run build` before deploy _src/public_.
 PS ...\src> npm run build
 ```
 
+## Deploying to Azure App Service
+
+TODO
+
 ## Starting the application
 
 ```PowerShell
@@ -71,5 +76,14 @@ PS ...\src> npm start
 
 ### Web app
 
-1. Write a list of your web apps into a file: `az webapp list | out-file "tmp.json"` (PowerShell).
-1. Open a web app in a browser: `az webapp browse --name SwallowTheDictionary --resource-group SwallowTheDictionary-rg` (PowerShell).
+#### Write a list of your web apps into a file
+
+```PowerShell
+az webapp list | out-file "tmp.json"
+```
+
+#### Open a web app in a browser
+
+```PowerShell
+az webapp browse --name SwallowTheDictionary --resource-group SwallowTheDictionary-rg
+```
