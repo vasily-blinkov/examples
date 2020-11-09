@@ -8,10 +8,27 @@ If (!$SkipLogin) {
 }
 
 If (!$SkipModules) {
-    Set-Variable YAMLModuleName "PSYaml"
-    If ((Get-Module | Where-Object Name $YAMLModuleName -EQ | Measure-Object).Count -EQ 0) {
-        Install-Module $YAMLModuleName
+    function Import-STDModule {
+        Param (
+            [Parameter(Mandatory = $true)]
+            [string] $ModuleName,
+
+            [string] $ModuleNotAvailableRecommendedAction = $null
+        )
+        Set-Variable ModuleImported ((Get-Module | Where-Object Name $ModuleName -EQ | Measure-Object).Count -NE 0)
+        If ($ModuleImported) {
+            Return
+        }
+        Set-Variable ModuleAvailable ((Get-Module | Where-Object Name $ModuleName -EQ | Measure-Object).Count -NE 0)
+        If (!$ModuleAvailable) {
+            Write-Error "Module '$ModuleName' is not available. $ModuleNotAvailableRecommendedAction."
+            Return
+        }
+        write-host "import module"
     }
+
+    Import-STDModule "PSYaml" `
+     -ModuleNotAvailableRecommendedAction "Follow 'One time setup' instructions from 'https://github.com/Phil-Factor/PSYaml/blob/master/README.md'"
 }
 
 <#az webapp deployment source config `

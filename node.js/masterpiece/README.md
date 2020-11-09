@@ -62,7 +62,23 @@ PS ...\src> npm run build
 
 ## Deploying to Azure App Service
 
-TODO
+Use the next PowerShell script which uses Azure CLI.
+
+Full form:
+
+```PowerShell
+PS ...\src> & '.\deployment\Azure CLI\Deploy-WebApp.ps1' -SkipLogin -SkipModules
+```
+or short form:
+
+```PowerShell
+PS ...\src> & '.\deployment\Azure CLI\Deploy-WebApp.ps1'
+```
+
+Here
+
+1. `-SkipLogin` is an optional switch to skip `az login`; if you're already logged in to Azure it makes the script execution faster
+1. `-SkipModules` is an optional switch to skip PowerShell modules check and loading; I recommend you to not omit this for a first run
 
 ## Starting the application
 
