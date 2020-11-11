@@ -3,6 +3,7 @@
 1. _Windows_
 1. _PowerShell Core_
 1. _YAML_
+1. _PSYaml_
 1. _Nodist_
 1. _Node.js_
 1. _NPM_
@@ -30,7 +31,9 @@
 1. Select the installed Node.js version: `nodist global 14.15.0`.
 1. Install the appropriate version of NPM: `nodist npm match`.
 1. Install package manager/build tool: `npm install -g brunch`.
-1. For deployments [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+1. For deployments: [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+1. For automated deployments: download code in a ZIP archive from the [Phil-Factor/PSYaml](https://github.com/Phil-Factor/PSYaml) project.
+1. For automated deployments: extract the _PSYaml_ folder from the downloaded archive into _"$HOME\Documents\PowerShell\Modules"_.
 
 ### Creating the project
 
@@ -55,15 +58,6 @@ _2)_ You should run `npm run build` before deploy _src/public_.
 Use this deployment method only to see if the project is able to work in a cloud.
 
 # Usage
-
-## Preparational actions before using automated deployment scripts
-
-Execute actions below once for a machine.
-
-### Install PSYaml
-
-1. Download code in a ZIP archive from the [Phil-Factor/PSYaml](https://github.com/Phil-Factor/PSYaml) project.
-1. Extract the _PSYaml_ folder from the archive into _"$HOME\Documents\PowerShell\Modules"_.
 
 ## Build the application for deployment
 
