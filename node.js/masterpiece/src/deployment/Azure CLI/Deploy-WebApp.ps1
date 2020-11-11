@@ -32,11 +32,12 @@ If (!$SkipModules) {
       "Install PSYaml by downloading 'https://github.com/Phil-Factor/PSYaml/tree/master/PSYaml' into '$env:USERPROFILE\Documents\PowerShell\Modules\'"
 }
 
-$PAT = Read-Host -Prompt "GitHub PAT (will be handled as secure string and won't be saved anywhere)" -AsSecureString
+$PAT = Read-Host -Prompt "GitHub PAT (will be handled as a secure string and won't be saved anywhere)" -AsSecureString
 az webapp deployment source config `
  --branch master `
  --git-token ([System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($PAT))) `
  --manual-integration `
  --name SwallowTheDictionary `
- --repo-url https://github.com/vasily-blinkov/examples/tree/master/node.js/masterpiece/src `
+ --repo-url https://github.com/vasily-blinkov/examples/node.js/masterpiece/src `
+ --repository-type github `
  --resource-group SwallowTheDictionary-rg
