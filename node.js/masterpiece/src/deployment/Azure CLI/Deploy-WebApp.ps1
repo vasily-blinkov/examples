@@ -19,16 +19,17 @@ If (!$SkipModules) {
         If ($ModuleImported) {
             Return
         }
-        Set-Variable ModuleAvailable ((Get-Module | Where-Object Name $ModuleName -EQ | Measure-Object).Count -NE 0)
+        Set-Variable ModuleAvailable ((Get-Module -ListAvailable | Where-Object Name $ModuleName -EQ | Measure-Object).Count -NE 0)
         If (!$ModuleAvailable) {
             Write-Error "Module '$ModuleName' is not available. $ModuleNotAvailableRecommendedAction."
             Return
         }
-        write-host "import module"
+        Import-Module "$ModuleName"
     }
 
     Import-STDModule "PSYaml" `
-     -ModuleNotAvailableRecommendedAction "Follow 'One time setup' instructions from 'https://github.com/Phil-Factor/PSYaml/blob/master/README.md'"
+     -ModuleNotAvailableRecommendedAction `
+      "Install PSYaml by downloading 'https://github.com/Phil-Factor/PSYaml/tree/master/PSYaml' into '$env:USERPROFILE\Documents\PowerShell\Modules\'"
 }
 
 <#az webapp deployment source config `

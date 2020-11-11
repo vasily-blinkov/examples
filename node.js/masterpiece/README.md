@@ -39,7 +39,7 @@
 1. Go to the project source code directory: `set-location "src"`.
 1. Install brunch plugins and app dependencies: `npm install`.
 
-## Initial deployment
+## Initial right-click deployment
 
 It is possible to deploy the application via Visual Studio Code using the next walkthrought:
 [Create a Node.js web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?pivots=platform-windows).
@@ -52,7 +52,18 @@ This creates _.vscode\settings.json_ at the project root directory (the director
 **Notes**: _1)_ The directory for deployment is nothing else than _src/public_.
 _2)_ You should run `npm run build` before deploy _src/public_.
 
+Use this deployment method only to see if the project is able to work in a cloud.
+
 # Usage
+
+## Preparational actions before using automated deployment scripts
+
+Execute actions below once for a machine.
+
+### Install PSYaml
+
+1. Download code in a ZIP archive from the [Phil-Factor/PSYaml](https://github.com/Phil-Factor/PSYaml) project.
+1. Extract the _PSYaml_ folder from the archive into _"$HOME\Documents\PowerShell\Modules"_.
 
 ## Build the application for deployment
 
